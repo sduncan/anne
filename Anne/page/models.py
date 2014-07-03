@@ -1,24 +1,24 @@
 from django.db import models
 
-def Artwork(models.Model):
+class artwork(models.Model):
     isSold = models.BooleanField(default=False)
-    art = models.ImageField()
+    art = models.ImageField(upload_to='/images/')
     name = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=6,decimal_places=2)
 
-def Photography(models.Model):
+class photography(models.Model):
     isSold = models.BooleanField(default=False)
-    photo = models.ImageField()
+    photo = models.ImageField(upload_to='/images/')
     name = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=6,decimal_places=2)
 
-def Design(models.Model):
+class design(models.Model):
     isSold = models.BooleanField(default=False)
-    design = models.ImageField()
+    design = models.ImageField(upload_to='/images/')
     name = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=6,decimal_places=2)
 
-def Message(models.Model):
+class message(models.Model):
     message = models.TextField()
     name = models.CharField(max_length=50)
     email = models.EmailField()
