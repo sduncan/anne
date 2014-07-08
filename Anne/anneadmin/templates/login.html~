@@ -1,0 +1,20 @@
+<html>
+ <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+ <style>
+   body { background-size: contain;
+   background-repeat: no-repeat;
+   background-image: url("http://hdwallphotos.com/wp-content/uploads/2014/03/Siberian-Husky-Puppies-HD-Wallpaper.jpg"); }
+   form { text-align: center; 
+   padding-top : 10%;}
+ </style>
+ 
+ <div name="login">
+   <form>
+     Username: <input type="text" name="username"><br><br>
+     Password: <input type="password" name="password">
+</form>
+ </div>
+
+
+ </html>
