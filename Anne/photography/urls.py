@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, url
 
-from page import views
+from photography import views
 
 urlpatterns = patterns('',
-    url(r'^art/', views.art, name='art'),
+    url(r'^photography/', views.photography, name='photography'),
 )
