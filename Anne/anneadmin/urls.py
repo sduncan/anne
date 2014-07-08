@@ -3,6 +3,6 @@ from django.conf.urls import patterns, url
 from anneadmin import views
 
 urlpatterns = patterns('',
-    url(r'^anneadmin/login', views.login, name='login'),
-    url(r'^anneadmin/interface', views.interface, name='interface'),
+    url(r'^login$', views.anneadmin_login, name='login'),
+    url(r'^anneadmin$', views.anneadmin, name='main'),
 )

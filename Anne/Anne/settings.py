@@ -39,7 +39,9 @@ INSTALLED_APPS = (
     'art',
     'design',
     'photography',
-    'anneadmin'
+    'anneadmin',
+    'home',
+    'contact'
 )
 
 MIDDLEWARE_CLASSES = (
