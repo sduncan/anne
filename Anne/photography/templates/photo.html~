@@ -14,11 +14,6 @@
  p { background-color: white;
  color: black;
  font-size: 150%; }
- img { background-color: white;
- border: 1px solid black;
- padding: 5px 5px 40px 5px; 
- width: 310px; 
- height: 345px; }
  </style>
  
  <div class="name">Anne Duncan</div>
@@ -31,7 +26,5 @@
      <button type="button" class="btn btn-default navbar-btn btn-group btn-group-lg btn-primary"> <span class="glyphicon glyphicon-user"></span> Contact</button>
    </div>
  </nav>
- <img src="http://placekitten.com/300/300" />
- <img src="http://placekitten.com/300/300" />
- <img src="http://placekitten.com/300/300" />
+ <p>Blah blah about me blah</p>
  </html>
