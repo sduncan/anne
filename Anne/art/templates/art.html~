@@ -14,6 +14,16 @@
  p { background-color: white;
  color: black;
  font-size: 150%; }
+ img { background-color: white;
+ box-shadow: 10px 10px 5px rgba(136, 136, 136, 0.5);
+ border: 1px solid black;
+ padding: 5px 5px 40px 5px;
+ width: 310px;
+ height: 345px;
+ margin-right: 15px;
+ margin-left: 15px;
+ margin-top: 10px;
+ margin-bottom: 10px;}
  </style>
  
  <div class="name">Anne Duncan</div>
@@ -26,5 +36,8 @@
      <button type="button" class="btn btn-default navbar-btn btn-group btn-group-lg btn-primary"> <span class="glyphicon glyphicon-user"></span> Contact</button>
    </div>
  </nav>
- <p>Blah blah about me blah</p>
+ <img src="http://placekitten.com/300/300"></img>
+ <img src="http://placekitten.com/300/300"></img>
+ <img src="http://placekitten.com/300/300"></img>
+ <img src="http://placekitten.com/300/300"></img>
  </html>
