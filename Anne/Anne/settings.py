@@ -20,11 +20,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 's$w%i8o+0tlbc@_i(o@o_3$8!e85b(!8y66_b9b_qh190#^vc7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = ['localhost']
+
+TEMPLATE_DIRS = ('templates',
+                )
 
 
 # Application definition
@@ -57,6 +60,10 @@ ROOT_URLCONF = 'Anne.urls'
 
 WSGI_APPLICATION = 'Anne.wsgi.application'
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+)
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases

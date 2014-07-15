@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% block title %} Admin {% endblock %}
 {% block content %}
- <div name="upload">
-
- </div>
- <div name="sold">
-
- </div>
+    <form enctype="multipart/form-data" method="post">{% csrf_token %}
+        Name of Piece:{{ form.piece_name }}
+        Price:{{ form.price }}
+        {{ form.image_submit }}{{ form.upload_choice }}
+        <button type="submit">Upload</button>
+    </form>
+    <div name="sold">
+    </div>
 {% endblock %}

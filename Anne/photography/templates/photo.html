@@ -1,5 +1,8 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% block title %} Photography {% endblock %}
-{% block content %} <img src="http://placekitten.com/300/300" />
- <img src="http://placekitten.com/300/300" />
- <img src="http://placekitten.com/300/300" /> {% endblock %}
+{% block content %}
+    {% for image in images %}
+        <img src='{{  image.picture_of_work }}'></img>
+    {% endfor %}
+{% endblock %}
