@@ -1,3 +1,8 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% block title %} Design {% endblock %}
-{% block content %} CONTENT HERE {% endblock %}
+{% block content %}
+    {% for image in images %}
+        <img src='{% static image %}'></img>
+    {% endfor %}
+{% endblock %}

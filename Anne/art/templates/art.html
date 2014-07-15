@@ -1,8 +1,8 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% block title %} Art {% endblock %}
-{% block content %} 
- <img src="http://placekitten.com/300/300"></img>
- <img src="http://placekitten.com/300/300"></img>
- <img src="http://placekitten.com/300/300"></img>
- <img src="http://placekitten.com/300/300"></img>
+{% block content %}
+    {% for image in images %}
+        <img src='{% static image %}'></img>
+    {% endfor %}
 {% endblock %}
