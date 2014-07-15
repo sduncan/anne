@@ -11,8 +11,8 @@ class AnneAdminView(FormView):
     form_class = AnneAdminForm
 
 class AnneAdminLoginForm(forms.Form):
-    username = forms.CharField(max_length=20)
-    password = forms.PasswordInput()
+    username = forms.CharField(required=True, max_length=20)
+    password = forms.PasswordInput(required=True)
 
 class AnneAdminLoginView(FormView):
     template_name = 'login.html'
