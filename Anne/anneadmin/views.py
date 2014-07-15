@@ -8,9 +8,9 @@ from photography.models import PhotoModel
 
 class AnneAdminForm(forms.Form):
     image_submit = forms.ImageField(required=True)
-    upload_choice = forms.ChoiceField(required=True, choices=(("", "Select Category"), ("art", "Art"), ("photography", "Photo"), ("design", "Design")))
-    piece_name = forms.CharField(required=True, max_length=100)
-    price = forms.DecimalField(required=True, max_digits=7, decimal_places=2)
+    upload_choice = forms.ChoiceField(required=True, choices=(("", "Select Category"), ("art", "Art"), ("photography", "Photo"), ("design", "Design")), attrs={'class': 'dropdown'})
+    piece_name = forms.CharField(required=True, max_length=100, attrs={'class':'input-group'})
+    price = forms.DecimalField(required=True, max_digits=7, decimal_places=2, attrs={'class':'input-group'})
 
 class AnneAdminView(FormView):
     template_name = 'admin.html'
@@ -32,8 +32,8 @@ class AnneAdminView(FormView):
             photo_piece.save()
 
 class AnneAdminLoginForm(forms.Form):
-    username = forms.CharField(max_length=20)
-    password = forms.PasswordInput()
+    username = forms.CharField(required=True, max_length=20)
+    password = forms.PasswordInput(required=True)
 
 class AnneAdminLoginView(FormView):
     template_name = 'login.html'
