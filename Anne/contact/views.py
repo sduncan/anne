@@ -1,7 +1,6 @@
-from django.shortcuts import render
-
+from django.views.generic import TemplateView
 # Create your views here.
+from Anne import settings
 
-def contact_anne(request):
-    return render(request,'contact.html')
-
+class ContactView(TemplateView):
+    template_name = "contact.html"

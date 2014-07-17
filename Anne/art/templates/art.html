@@ -3,6 +3,6 @@
 {% block title %} Art {% endblock %}
 {% block content %}
     {% for image in images %}
-        <img src='{% static image %}'></img>
+        <img src='{% static image.picture_of_work %}'></img>
     {% endfor %}
 {% endblock %}

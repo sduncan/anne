@@ -1,12 +1,20 @@
 {% extends "base.html" %}
 {% block title %} Admin {% endblock %}
 {% block content %}
+
     <form enctype="multipart/form-data" method="post">{% csrf_token %}
-        Name of Piece:{{ form.piece_name }}
-        Price:{{ form.price }}
-        {{ form.image_submit }}{{ form.upload_choice }}
-        <button class="" type="submit"><span class="glyphicon glyphicon-cloud-upload"></span> Upload</button>
+        <div class="form-group">
+            Name of Piece:{{ form.piece_name }}
+            Price:{{ form.price }}
+            {{ form.image_submit }}{{ form.upload_choice }}
+            <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-cloud-upload"></span> Upload</button>
+        </div>
     </form>
     <div name="sold">
     </div>
+
+    <script>
+        $("#id_piece_name").addClass("form-control");
+        $("#id_price").addClass("form-control");
+    </script>
 {% endblock %}

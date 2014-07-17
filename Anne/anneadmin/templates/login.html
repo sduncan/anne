@@ -10,9 +10,11 @@ form { text-align: center;
 
 {% block content %}
  <div>
-   <form>
+   <form method="get">
      Username: <input type="text" name="username" class="input-group input-group-lg"><br><br>
-     Password: <input type="password" name="password" class="input-group input-group-lg">
+     Password: <input type="password" name="password" class="input-group input-group-lg"><br><br>
+
+     <button class="btn btn-success"><span class="glyphicon glyphicon-thumbs-up"></span> Log In</button>
    </form>
  </div>
 {% endblock %}

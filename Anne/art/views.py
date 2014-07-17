@@ -20,7 +20,6 @@ class ArtView(FormView):
     template_name = 'art.html'
 
     def get_context_data(self, **kwargs):
-
         context = super(ArtView, self).get_context_data(**kwargs)
-
+        context['images'] = ArtModel.objects.all()
         return context
